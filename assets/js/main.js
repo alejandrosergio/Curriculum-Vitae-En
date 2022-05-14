@@ -86,7 +86,7 @@ const themeButton = document.getElementById('theme-button');
 const descargar = document.getElementById('descargar');
 const darkTheme = 'dark-theme';
 const iconTheme = 'bx-sun';
-const iconTitle = 'Tema oscuro';
+const iconTitle = 'dark theme';
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme');
@@ -113,14 +113,14 @@ themeButton.addEventListener('click', () => {
     //localStorage.setItem('selected-icon', getCurrentIcon());
 
     // Alterar el titulo del button
-    if( themeButton.title === 'Tema oscuro'){
-        themeButton.title = 'Tema claro';
-        descargar.download = 'SERGIO-HERNANDEZ-CV-OSCURO.pdf';
-        descargar.href = './assets/pdf/SERGIO-HERNANDEZ-CV-OSCURO.pdf';
+    if( themeButton.title === 'Dark theme'){
+        themeButton.title = 'Sure theme';
+        descargar.download = 'SERGIO-HERNANDEZ-CV-DARK.pdf';
+        descargar.href = './assets/pdf/SERGIO-HERNANDEZ-CV-DARK.pdf';
     }else{
-        themeButton.title = 'Tema oscuro'
-        descargar.download = 'SERGIO-HERNANDEZ-CV-CLARO.pdf';
-        descargar.href = './assets/pdf/SERGIO-HERNANDEZ-CV-CLARO.pdf';
+        themeButton.title = 'Dark theme'
+        descargar.download = 'SERGIO-HERNANDEZ-CV-SURE.pdf';
+        descargar.href = './assets/pdf/SERGIO-HERNANDEZ-CV-SURE.pdf';
     }
 
 });
